@@ -1,4 +1,4 @@
-function NavTabs({ currentPage, handlePageChange }) {
+function Navigation({ currentPage, handlePageChange }) {
     return (
       <ul className="nav nav-tabs">
         <li className="nav-item">
@@ -14,7 +14,7 @@ function NavTabs({ currentPage, handlePageChange }) {
         </li>
         <li className="nav-item">
           <a
-            href="#Portfolio"
+            href="#portfolio"
             onClick={() => handlePageChange('Portfolio')}
             // Check to see if the currentPage is `Portfolio`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
             className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
@@ -46,5 +46,5 @@ function NavTabs({ currentPage, handlePageChange }) {
     );
   }
   
-  export default NavTabs;
+  export default Navigation;
   
