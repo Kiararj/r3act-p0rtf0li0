@@ -8,6 +8,7 @@ const styles = {
   color: 'white'
   },
 };
+
 function Header() {
 
   return (
