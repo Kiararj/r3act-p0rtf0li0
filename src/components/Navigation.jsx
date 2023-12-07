@@ -5,13 +5,13 @@ function Navigation({ currentPage, handlePageChange }) {
         <ul class="navbar-nav mr-auto">
         <li className="nav-item">
          <a
-           href="#home"
-           onClick={() => handlePageChange('Home')}
-            // This is a conditional (ternary) operator that checks to see if the current page is "Home"
+           href="#aboutme"
+           onClick={() => handlePageChange('AboutMe')}
+            // This is a conditional (ternary) operator that checks to see if the current page is "AboutMe"
              // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
-             className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
+             className={currentPage === 'AboutMe' ? 'nav-link active' : 'nav-link'}
            >
-             Home
+             About Me
            </a>
        </li>
          <li className="nav-item">
@@ -44,22 +44,6 @@ function Navigation({ currentPage, handlePageChange }) {
              Resume
            </a>
          </li>
-        </ul>
-    </div>
-    <div class="mx-auto order-0">
-        <a class="navbar-brand mx-auto" href="#">Navbar 2</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </div>
-    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2 end">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Right</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
         </ul>
     </div>
 </nav>
