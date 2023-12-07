@@ -1,18 +1,19 @@
-import './styles/Header.css'
+import Navigation from "./Navigation";
+import Typewriter from "./Typewriter";
 
-const styles = {
-  header: {
-    background: 'purple'
-  },
-  h1: {
-  color: 'white'
-  },
-};
-function Header() {
-
+function Header({ currentPage, handlePageChange }) {
   return (
-    <header className="header" style={styles.header}>
-      <h1 style={styles.h1}>Welcome</h1>
+    <header>
+      <div>
+        <h1>
+          Hi, I'm Kiara!{" "}
+          <Typewriter text="Full Stack Web Developer" delay={100} infinite />
+        </h1>
+      </div>
+      <Navigation
+        currentPage={currentPage}
+        handlePageChange={handlePageChange}
+      />
     </header>
   );
 }
