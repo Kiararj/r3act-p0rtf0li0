@@ -39,6 +39,8 @@ export default function Resume() {
           <li>GitHub <FaGithub /></li>
           <li>Insomnia <SiInsomnia /></li>
         </ul>
+        <h2>Resume</h2>
+      Download resume<a href= "#">here</a>.
       </div>
     );
   }
