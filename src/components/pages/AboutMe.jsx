@@ -1,6 +1,9 @@
 export default function AboutMe() {
+  const aboutmeStyle = {
+    backgroundColor: '#F5EFFF', 
+  };
     return (
-      <div>
+      <div style={aboutmeStyle}>
         <h1>About Me</h1>
         <div>
         <img src="../../../assets/images/profile.png"></img>
