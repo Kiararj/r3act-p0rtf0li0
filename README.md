@@ -6,10 +6,6 @@ AS AN employer looking for candidates with experience building single-page appli
 I WANT to view a potential employee's deployed React portfolio of work samples
 SO THAT I can assess whether they're a good candidate for an open position
 
-## Getting Started
-
-
-
 ## Projects
 
 For each project you feature in your portfolio, you should include the following:
