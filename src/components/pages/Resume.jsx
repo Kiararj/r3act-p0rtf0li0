@@ -1,16 +1,16 @@
-import { FaHtml5 } from "react-icons/fa";
-import { FaCss3Alt } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io5";
-import { FaBootstrap } from "react-icons/fa";
-import { FaReact } from "react-icons/fa";
-import { FaNodeJs } from "react-icons/fa";
-import { SiExpress } from "react-icons/si";
-import { DiMongodb } from "react-icons/di";
-import { SiApollographql } from "react-icons/si";
-import { GrMysql } from "react-icons/gr";
-import { FaGitAlt } from "react-icons/fa6";
-import { FaGithub } from "react-icons/fa";
-import { SiInsomnia } from "react-icons/si";
+import { FaHtml5 } from 'react-icons/fa';
+import { FaCss3Alt } from 'react-icons/fa';
+import { IoLogoJavascript } from 'react-icons/io5';
+import { FaBootstrap } from 'react-icons/fa';
+import { FaReact } from 'react-icons/fa';
+import { FaNodeJs } from 'react-icons/fa';
+import { SiExpress } from 'react-icons/si';
+import { DiMongodb } from 'react-icons/di';
+import { SiApollographql } from 'react-icons/si';
+import { GrMysql } from 'react-icons/gr';
+import { FaGitAlt } from 'react-icons/fa6';
+import { FaGithub } from 'react-icons/fa';
+import { SiInsomnia } from 'react-icons/si';
 
 export default function Resume() {
 
@@ -18,7 +18,8 @@ export default function Resume() {
     backgroundColor: '#F5EFFF', 
     padding: '25px',
     display: 'flex',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
+    height: '575px'
   }
   
   const sectionStyle = {
@@ -44,7 +45,7 @@ export default function Resume() {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    marginBottom: '10px'
+    marginBottom: '10px',
   }
 
     return (
@@ -79,7 +80,7 @@ export default function Resume() {
       </div>
       <div style={sectionStyle}>
       <h2>Resume</h2>
-      Download resume<a href= "#">here</a>.
+      Download resume<a href= '#'>here</a>.
       </div>
     </div>
     );

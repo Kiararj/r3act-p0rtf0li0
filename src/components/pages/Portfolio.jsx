@@ -5,10 +5,13 @@ export default function Portfolio() {
   const portfolioStyle = {
     backgroundColor: '#F5EFFF', 
     padding: '25px',
+  }
+
+  const projectsStyle = {
     display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center'
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'space-between'
   }
 
   const projects = [
@@ -58,7 +61,7 @@ export default function Portfolio() {
 
     return (
       <div style={portfolioStyle}>
-      <div className="projects">
+      <div style={projectsStyle}>
         {/* Map through projects and render Project component for each */}
         {projects.map((project, index) => (
           <Project

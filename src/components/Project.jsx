@@ -9,7 +9,9 @@ const Project = ({ title, description, imageUrl, link, github }) => {
     margin: '20px auto',
     display: 'flex',
     flexDirection: 'column',
-    alignItems: 'center'
+    alignItems: 'center',
+    flexBasis: 'calc(33.33% - 20px)',
+    margin: '10px',
   }
   
   const imageStyle = {

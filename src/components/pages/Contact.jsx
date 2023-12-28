@@ -9,7 +9,8 @@ export default function Contact() {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    height: '575px'
   }
   
   const inputStyle = {
@@ -118,10 +119,10 @@ export default function Contact() {
       <input
       style={inputStyle}
         value={email}
-        name="email"
+        name='email'
         onChange={handleInputChange}
-        type="email"
-        placeholder="Email"
+        type='email'
+        placeholder='Email'
         onFocus={focusedEmail}
         onBlur={blurredEmail}
         required
@@ -130,10 +131,10 @@ export default function Contact() {
       <input
       style={inputStyle}
         value={name}
-        name="name"
+        name='name'
         onChange={handleInputChange}
-        type="text"
-        placeholder="Name"
+        type='text'
+        placeholder='Name'
         onFocus={focusedName}
         onBlur={blurredName}
         required
@@ -142,10 +143,10 @@ export default function Contact() {
         <textarea
         style={inputStyle}
         value={message}
-        name="message"
+        name='message'
         onChange={handleInputChange}
-        type="text"
-        placeholder="Enter message here."
+        type='text'
+        placeholder='Enter message here.'
         rows={6}
         onFocus={focusedMessage}
         onBlur={blurredMessage}
@@ -158,15 +159,15 @@ export default function Contact() {
             )}
                 <button 
                 style={buttonStyle}
-                type="submit"
-                className="block w-full rounded-md bg-regal-blue px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 mt-5"
+                type='submit'
+                className='block w-full rounded-md bg-regal-blue px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 mt-5'
               >
                 Submit
               </button>
             </form>
             {errorMessage && (
               <div>
-                <p className="error-text">{errorMessage}</p>
+                <p className='error-text'>{errorMessage}</p>
               </div>
             )}
           </div>
