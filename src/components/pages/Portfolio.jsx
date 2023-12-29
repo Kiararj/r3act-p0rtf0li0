@@ -1,18 +1,43 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Project from '../Project';
 
 export default function Portfolio() {
-  const portfolioStyle = {
-    backgroundColor: '#F5EFFF', 
-    padding: '25px',
-  }
-
-  const projectsStyle = {
-    display: 'flex',
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    justifyContent: 'space-between'
-  }
+  const portfolioStyles = {
+    smallScreen: {
+      portfolioStyle: {
+        backgroundColor: '#F5EFFF', 
+        padding: '15px'
+      },
+      projectsStyle: {
+        display: 'block',
+        justifyContent: 'center'
+      }
+    },
+    mediumScreen: {
+      portfolioStyle: {
+        backgroundColor: '#F5EFFF', 
+        padding: '20px'
+      },
+      projectsStyle: {
+        display: 'flex',
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+        justifyContent: 'space-around'
+      }
+    },
+    largeScreen: {
+      portfolioStyle: {
+        backgroundColor: '#F5EFFF', 
+        padding: '25px'
+      },
+      projectsStyle: {
+        display: 'flex',
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+        justifyContent: 'space-between'
+      }
+    }
+  };
 
   const projects = [
     {
@@ -59,9 +84,29 @@ export default function Portfolio() {
     },
   ];
 
+const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+useEffect(() => {
+  const handleResize = () => {
+    setWindowWidth(window.innerWidth);
+  };
+
+  window.addEventListener('resize', handleResize);
+
+  return () => {
+    window.removeEventListener('resize', handleResize);
+  };
+}, []);
+
+const styles = windowWidth < 600 
+  ? portfolioStyles.smallScreen 
+  : windowWidth < 900 
+    ? portfolioStyles.mediumScreen 
+    : portfolioStyles.largeScreen;
+
     return (
-      <div style={portfolioStyle}>
-      <div style={projectsStyle}>
+      <div style={styles.portfolioStyle}>
+      <div style={styles.projectsStyle}>
         {/* Map through projects and render Project component for each */}
         {projects.map((project, index) => (
           <Project
