@@ -164,7 +164,7 @@ const styles = windowWidth < 600
       </div>
       <div style={styles.sectionStyle}>
       <h2>Resume</h2>
-      Download resume<a href= '/assets/Resume.pdf'>here</a>.
+      Download resume<a href='/src/assets/Resume.pdf'>here</a>.
       </div>
     </div>
     );

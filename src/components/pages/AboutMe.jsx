@@ -84,7 +84,7 @@ const smallScreenStyles = {
     return (
       <div style={styles}>
       <div style={styles.aboutMeStyle}>
-        <img src='../../../assets/images/profile2.png' style={styles.imageStyle}></img>
+        <img src='/src/assets/images/profile2.png' style={styles.imageStyle}></img>
         <p style={styles.paragraphStyle}>
         Hi, I'm Kiara, a passionate Full Stack Web Developer based in Austin, Texas. 
         Fresh out of the UT Full Stack Coding Program, I'm geared up to dive into the world of web development armed with a wealth of newly acquired skills. 
