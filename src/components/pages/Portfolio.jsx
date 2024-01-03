@@ -43,42 +43,42 @@ export default function Portfolio() {
     {
       title: 'Look for a Book',
       description: 'A full stack book search application built with MERN stack, styled with Bootstrap',
-      imageUrl: '../../../assets/images/screenshotOne.png',
+      imageUrl: '/src/assets/images/screenshotOne.png',
       link: 'https://look-for-a-book.onrender.com/',
       github: 'https://github.com/Kiararj/look-for-a-book'
     },
     {
       title: 'VenueViewer',
       description: 'A full stack application built with JavaScript, MySQL, Node.js, styled with Tailwind CSS',
-      imageUrl: '../../../assets/images/screenshotTwo.png',
+      imageUrl: '/src/assets/images/screenshotTwo.png',
       link: 'https://venue-viewer-team1-69164e361419.herokuapp.com/login',
       github: 'https://github.com/ChaseOstien/Venue-Viewer'
     },
     {
       title: 'Just.Another.Text.Editor',
       description: 'Text Editor built using PWA principles',
-      imageUrl: '../../../assets/images/screenshotThree.png',
+      imageUrl: '/src/assets/images/screenshotThree.png',
       link: 'https://shielded-cove-52935-433337f55b6b.herokuapp.com/',
       github: 'https://github.com/Kiararj/text-editor'
     },
     {
       title: 'Social Network API',
       description: 'An API built with Express and MongoDB',
-      imageUrl: '../../../assets/images/screenshotFour.png',
+      imageUrl: '/src/assets/images/screenshotFour.png',
       link: 'https://drive.google.com/file/d/1KhK1Qh83OAbNmQo-OrvjyZ689hzwT--p/view',
       github: 'https://github.com/Kiararj/social-network-api'
     },
     {
       title: 'eCommerce-back-end',
       description: 'Back end for an ecommerce site using Express, Node.js, MySQL',
-      imageUrl: '../../../assets/images/screenshotFive.png',
+      imageUrl: '/src/assets/images/screenshotFive.png',
       link: 'https://drive.google.com/file/d/1FxyX6BAz5DJR-f7t4x1jXN_ZWEXA9rhB/view',
       github: 'https://github.com/Kiararj/look-for-a-book'
     },
     {
       title: 'Workforce-Navigator',
       description: 'A CMS employee tracker built using SQL',
-      imageUrl: '../../../assets/images/screenshotSix.png',
+      imageUrl: '/src/assets/images/screenshotSix.png',
       link: 'https://drive.google.com/file/d/1HTnl60bV3Ij7yozWs6mm43mtYE0ahCnJ/view',
       github: 'https://github.com/Kiararj/workforce-navigator'
     },
